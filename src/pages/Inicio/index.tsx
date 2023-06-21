@@ -10,7 +10,7 @@ export default function Inicio() {
   pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0,3);
   const navigate = useNavigate();
 
-  function redirecionarParaDetalhes(prato: Prato[0]) {
+  function redirecionarParaDetalhes(prato: Prato) {
     navigate(`/prato/${prato.id}`, { state: { prato }, replace: true});
   }
 
